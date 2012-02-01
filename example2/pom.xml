@@ -2,6 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>apache.felix.tutorial</groupId>
   <artifactId>example2</artifactId>
+  <name>Example 2</name>
 
   <parent>
     <artifactId>apache-felix-tutorial</artifactId>

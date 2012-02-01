@@ -2,12 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.danielsoft.learn</groupId>
   <artifactId>apache-felix-tutorial</artifactId>
+  <name>Apache Felix Tutorial</name>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
     <module>example1</module>
     <module>example2</module>
+    <module>example2b</module>
   </modules>
 
   <build>
@@ -30,6 +32,12 @@
         <artifactId>org.osgi.core</artifactId>
         <version>1.4.0</version>
       </dependency>
+      <dependency>
+      <groupId>apache.felix.tutorial</groupId>
+      <artifactId>example2</artifactId>
+      <version>${project.version}</version>
+      </dependency>
+      
     </dependencies>
   </dependencyManagement>
 

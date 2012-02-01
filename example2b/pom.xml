@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>apache-felix-tutorial</groupId>
-  <artifactId>example1</artifactId>
-  <name>Example 1</name>
+  <groupId>apache.felix.tutorial</groupId>
+  <artifactId>example2b</artifactId>
+  <name>Example 2b</name>
 
   <parent>
     <artifactId>apache-felix-tutorial</artifactId>
@@ -29,6 +29,10 @@
     <dependency>
       <groupId>org.apache.felix</groupId>
       <artifactId>org.osgi.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>apache.felix.tutorial</groupId>
+      <artifactId>example2</artifactId>
     </dependency>
   </dependencies>
 
