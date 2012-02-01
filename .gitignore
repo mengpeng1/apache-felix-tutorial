@@ -1,0 +1,12 @@
+.project
+.settings/
+example1/.project
+example1/.classpath
+example1/target/
+example2/.project
+example2/.classpath
+example2/target/
+example2b/.project
+example2b/.classpath
+example2b/target/
+
