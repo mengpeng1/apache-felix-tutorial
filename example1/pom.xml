@@ -1,29 +1,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>apache-felix-tutorial</groupId>
   <artifactId>example1</artifactId>
   <name>Example 1</name>
+    <packaging>bundle</packaging>
 
   <parent>
+      <groupId>org.danielsoft.learn</groupId>
     <artifactId>apache-felix-tutorial</artifactId>
-    <groupId>org.danielsoft.learn</groupId>
+
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifestFile>src/main/resources/META-INF/manifest.mf</manifestFile>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <instructions>
+                            <Bundle-Activator>tutorial.example1.Activator</Bundle-Activator>
+                        </instructions>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
 
   <dependencies>
     <dependency>
