@@ -5,18 +5,41 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceEvent;
 import org.osgi.framework.ServiceListener;
 
+/**
+ * Implements a simple bundle that utilizes the OSGi framework's event mechanism
+ * to listen for service events. Upon receiving a service event, it prints out
+ * the event's details.
+ */
 public class Activator implements BundleActivator, ServiceListener {
 
+	/**
+	 * Add itself to the bundle context as a service listener.
+	 * 
+	 * @param context
+	 *            the framework context for the bundle
+	 */
 	public void start(BundleContext context) throws Exception {
 		System.out.println("Start listening for service events.");
 		context.addServiceListener(this);
 	}
 
+	/**
+	 * Remove itself from the bundle context as a service listener.
+	 * 
+	 * @param context
+	 *            the framework context for the bundle
+	 */
 	public void stop(BundleContext context) throws Exception {
 		context.removeServiceListener(this);
 		System.out.println("Stopped listening for service events.");
 	}
 
+	/**
+	 * Print the details of any service event from the framework.
+	 * 
+	 * @param event
+	 *            the fired service event
+	 */
 	public void serviceChanged(ServiceEvent event) {
 		String[] objectClass = (String[]) event.getServiceReference()
 				.getProperty("objectClass");

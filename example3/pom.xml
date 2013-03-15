@@ -1,17 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
-		<artifactId>apache-felix-tutorial</artifactId>
 		<groupId>org.danielsoft.learn</groupId>
+		<artifactId>apache-felix-tutorial</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
-	<artifactId>example2b</artifactId>
+	<artifactId>example3</artifactId>
 	<packaging>bundle</packaging>
-	<name>French Dictionary</name>
-	<description>A bundle that registers a French dictionary service.</description>
+	<name>Dictionary Client</name>
 
 	<build>
 		<plugins>
@@ -21,7 +18,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Bundle-Activator>tutorial.example2b.Activator</Bundle-Activator>
+						<Bundle-Activator>tutorial.example3.Activator</Bundle-Activator>
 					</instructions>
 				</configuration>
 			</plugin>
@@ -49,5 +46,4 @@
 			<artifactId>junit</artifactId>
 		</dependency>
 	</dependencies>
-
 </project>
