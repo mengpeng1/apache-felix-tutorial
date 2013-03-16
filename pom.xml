@@ -14,6 +14,7 @@
 		<module>french-dictionary-service</module>
 		<module>dictionary-client</module>
 		<module>robust-dictionary-client</module>
+		<module>swing-dictionary-client</module>
 		<module>service-tracker-dictionary-client</module>
 		<module>tutorial-runner</module>
 	</modules>
@@ -76,6 +77,11 @@
 			<dependency>
 				<groupId>org.danielsoft.learn</groupId>
 				<artifactId>service-tracker-dictionary-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.danielsoft.learn</groupId>
+				<artifactId>swing-dictionary-client</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- OSGI Alliance -->
