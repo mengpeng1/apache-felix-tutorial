@@ -8,10 +8,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>example2</artifactId>
-	<name>English Dictionary</name>
+	<artifactId>french-dictionary-service</artifactId>
 	<packaging>bundle</packaging>
-	<description>A bundle that registers an English dictionary service.</description>
+	<name>French Dictionary</name>
+	<description>A bundle that registers a French dictionary service.</description>
 
 	<build>
 		<plugins>
@@ -21,7 +21,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Bundle-Activator>tutorial.example2.Activator</Bundle-Activator>
+						<Bundle-Activator>tutorial.example2b.Activator</Bundle-Activator>
 					</instructions>
 				</configuration>
 			</plugin>
@@ -29,6 +29,11 @@
 	</build>
 
 	<dependencies>
+		<!-- Internal -->
+		<dependency>
+			<groupId>org.danielsoft.learn</groupId>
+			<artifactId>english-dictionary-service</artifactId>
+		</dependency>
 		<!-- OSGi Alliance -->
 		<dependency>
 			<groupId>org.apache.felix</groupId>

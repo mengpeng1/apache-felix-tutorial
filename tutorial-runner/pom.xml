@@ -19,15 +19,19 @@
 		</dependency>
 		<dependency>
 			<groupId>org.danielsoft.learn</groupId>
-			<artifactId>example2</artifactId>
+			<artifactId>english-dictionary-service</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.danielsoft.learn</groupId>
-			<artifactId>example2b</artifactId>
+			<artifactId>french-dictionary-service</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.danielsoft.learn</groupId>
-			<artifactId>example3</artifactId>
+			<artifactId>dictionary-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.danielsoft.learn</groupId>
+			<artifactId>robust-dictionary-client</artifactId>
 		</dependency>
 	</dependencies>
 

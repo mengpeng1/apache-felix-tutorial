@@ -9,9 +9,10 @@
 
 	<modules>
 		<module>example1</module>
-		<module>example2</module>
-		<module>example2b</module>
-		<module>example3</module>
+		<module>english-dictionary-service</module>
+		<module>french-dictionary-service</module>
+		<module>dictionary-client</module>
+		<module>robust-dictionary-client</module>
 		<module>tutorial-runner</module>
 	</modules>
 
@@ -47,17 +48,22 @@
 			</dependency>
 			<dependency>
 				<groupId>org.danielsoft.learn</groupId>
-				<artifactId>example2</artifactId>
+				<artifactId>english-dictionary-service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.danielsoft.learn</groupId>
-				<artifactId>example2b</artifactId>
+				<artifactId>french-dictionary-service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.danielsoft.learn</groupId>
-				<artifactId>example3</artifactId>
+				<artifactId>dictionary-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.danielsoft.learn</groupId>
+				<artifactId>robust-dictionary-client</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- OSGI Alliance -->

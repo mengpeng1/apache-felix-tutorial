@@ -6,7 +6,7 @@
 		<artifactId>apache-felix-tutorial</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>example3</artifactId>
+	<artifactId>dictionary-client</artifactId>
 	<packaging>bundle</packaging>
 	<name>Dictionary Client</name>
 
@@ -29,7 +29,7 @@
 		<!-- Internal -->
 		<dependency>
 			<groupId>org.danielsoft.learn</groupId>
-			<artifactId>example2</artifactId>
+			<artifactId>english-dictionary-service</artifactId>
 		</dependency>
 		<!-- OSGi Alliance -->
 		<dependency>

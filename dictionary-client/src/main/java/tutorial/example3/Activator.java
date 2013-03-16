@@ -21,16 +21,17 @@ import tutorial.example2.service.DictionaryService;
  * again you must stop and then restart the bundle.
  **/
 public class Activator implements BundleActivator {
+
 	/**
-	 * Implements BundleActivator.start(). Queries for all available dictionary
-	 * services. If none are found it simply prints a message and returns,
-	 * otherwise it reads words from standard input and checks for their
-	 * existence from the first dictionary that it finds. (NOTE: It is very bad
-	 * practice to use the calling thread to perform a lengthy process like
-	 * this; this is only done for the purpose of the tutorial.)
+	 * Query for all available dictionary services. If none are found it simply
+	 * prints a message and returns, otherwise it reads words from standard
+	 * input and checks for their existence from the first dictionary that it
+	 * finds. (NOTE: It is very bad practice to use the calling thread to
+	 * perform a lengthy process like this; this is only done for the purpose of
+	 * the tutorial.)
 	 * 
 	 * @param context
-	 *            the framework context for the bundle.
+	 *            the framework context for the bundle
 	 **/
 	public void start(BundleContext context) throws Exception {
 		// Query for all service references matching any language.
@@ -77,13 +78,14 @@ public class Activator implements BundleActivator {
 	}
 
 	/**
-	 * Implements BundleActivator.stop(). Does nothing since the framework will
-	 * automatically unget any used services.
+	 * Do nothing since the framework will automatically unget any used
+	 * services.
 	 * 
 	 * @param context
-	 *            the framework context for the bundle.
+	 *            the framework context for the bundle
 	 **/
 	public void stop(BundleContext context) {
 		// NOTE: The service is automatically released.
 	}
+
 }
