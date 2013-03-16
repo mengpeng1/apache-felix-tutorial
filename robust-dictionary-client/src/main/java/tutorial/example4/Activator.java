@@ -10,7 +10,7 @@ import org.osgi.framework.ServiceEvent;
 import org.osgi.framework.ServiceListener;
 import org.osgi.framework.ServiceReference;
 
-import tutorial.example2.service.DictionaryService;
+import com.example.service.DictionaryService;
 
 /**
  * This class implements a bundle that uses a dictionary service to check for

@@ -7,7 +7,7 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.util.tracker.ServiceTracker;
 
-import tutorial.example2.service.DictionaryService;
+import com.example.service.DictionaryService;
 
 /**
  * This class implements a bundle that uses a dictionary service to check for

@@ -29,7 +29,7 @@
 		<!-- Internal -->
 		<dependency>
 			<groupId>org.danielsoft.learn</groupId>
-			<artifactId>english-dictionary-service</artifactId>
+			<artifactId>dictionary-service</artifactId>
 		</dependency>
 		<!-- OSGi Alliance -->
 		<dependency>

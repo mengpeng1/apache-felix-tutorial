@@ -5,7 +5,7 @@ import java.util.Hashtable;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import tutorial.example2.service.DictionaryService;
+import com.example.service.DictionaryService;
 
 public class Activator implements BundleActivator {
 

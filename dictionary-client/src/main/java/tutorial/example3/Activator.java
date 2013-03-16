@@ -1,14 +1,14 @@
 package tutorial.example3;
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
 
-import tutorial.example2.service.DictionaryService;
+import com.example.service.DictionaryService;
 
 /**
  * This class implements a bundle that uses a dictionary service to check for

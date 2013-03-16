@@ -1,6 +1,6 @@
 package tutorial.example2;
 
-import tutorial.example2.service.DictionaryService;
+import com.example.service.DictionaryService;
 
 /**
  * Implements an English dictionary service.

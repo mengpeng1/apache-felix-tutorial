@@ -9,6 +9,7 @@
 
 	<modules>
 		<module>simple-service-listener</module>
+		<module>dictionary-service</module>
 		<module>english-dictionary-service</module>
 		<module>french-dictionary-service</module>
 		<module>dictionary-client</module>
@@ -45,6 +46,11 @@
 			<dependency>
 				<groupId>org.danielsoft.learn</groupId>
 				<artifactId>simple-service-listener</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.danielsoft.learn</groupId>
+				<artifactId>dictionary-service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>

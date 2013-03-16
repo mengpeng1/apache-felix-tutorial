@@ -12,7 +12,7 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.osgi.framework.BundleContext;
 
-import tutorial.example2.service.DictionaryService;
+import com.example.service.DictionaryService;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ActivatorTest {
