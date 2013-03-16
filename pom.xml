@@ -13,6 +13,7 @@
 		<module>french-dictionary-service</module>
 		<module>dictionary-client</module>
 		<module>robust-dictionary-client</module>
+		<module>service-tracker-dictionary-client</module>
 		<module>tutorial-runner</module>
 	</modules>
 
@@ -66,10 +67,20 @@
 				<artifactId>robust-dictionary-client</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.danielsoft.learn</groupId>
+				<artifactId>service-tracker-dictionary-client</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 			<!-- OSGI Alliance -->
 			<dependency>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>org.osgi.core</artifactId>
+				<version>1.4.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>org.osgi.compendium</artifactId>
 				<version>1.4.0</version>
 			</dependency>
 			<!-- Testing -->
