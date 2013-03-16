@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>example1</module>
+		<module>simple-service-listener</module>
 		<module>english-dictionary-service</module>
 		<module>french-dictionary-service</module>
 		<module>dictionary-client</module>
@@ -43,7 +43,7 @@
 		<dependencies>
 			<dependency>
 				<groupId>org.danielsoft.learn</groupId>
-				<artifactId>example1</artifactId>
+				<artifactId>simple-service-listener</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>

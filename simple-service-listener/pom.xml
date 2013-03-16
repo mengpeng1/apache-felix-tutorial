@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>example1</artifactId>
+	<artifactId>simple-service-listener</artifactId>
 	<name>Service Listener</name>
 	<packaging>bundle</packaging>
 
